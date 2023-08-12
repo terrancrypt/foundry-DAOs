@@ -4,9 +4,9 @@ pragma solidity 0.8.19;
 import {Governor, IGovernor} from "lib/openzeppelin-contracts/contracts/governance/Governor.sol";
 import {GovernorSettings} from "lib/openzeppelin-contracts/contracts/governance/extensions/GovernorSettings.sol";
 import {GovernorCountingSimple} from "lib/openzeppelin-contracts/contracts/governance/extensions/GovernorCountingSimple.sol";
-import {GovernorVotes} from "lib/openzeppelin-contracts/contracts/governance/extensions/GovernorVotes.sol";
+import {GovernorVotes, IVotes} from "lib/openzeppelin-contracts/contracts/governance/extensions/GovernorVotes.sol";
 import {GovernorVotesQuorumFraction} from "lib/openzeppelin-contracts/contracts/governance/extensions/GovernorVotesQuorumFraction.sol";
-import {GovernorTimelockControl} from "lib/openzeppelin-contracts/contracts/governance/extensions/GovernorTimelockControl.sol";
+import {GovernorTimelockControl, TimelockController} from "lib/openzeppelin-contracts/contracts/governance/extensions/GovernorTimelockControl.sol";
 
 contract MyGovernor is
     Governor,
